@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Fill out the required input below</p>
+      <form id="survey-form" >
+        <label id="name-label">Name:
+          <input type="text" id="name" placeholder="Enter your name"  required></input>
+        </label>
+        <label id="email-label">
+          Email:
+          <input type="email" id="email" required placeholder="Enter your email" ">
+        </label>
+        <label id="number-label">Age:
+          <input type="number" id="number" min="13" max="120"  placeholder="age"></input>
+        </label>
+     <hr>
+    <fieldset> 
+        <label> <p class="left">Which time of the day do you prefer?</p>
+            <select id="dropdown">
+              <option value="">Select one</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afteroon</option>
+              <option value="Night">Night</option>
+            </select>
+        </label>
+        <p class="left">Are you an introvert or extrovert?</p>
+        <label>
+          <input type="radio" name="introvert-extrovert" value="Introvert" class="inline" checked>Introvert</input>
+          </label>
+          <label>
+          <input type="radio" name="introvert-extrovert" value="Extrovert" class="inline">Extrovert</input>
+        </label>
+        </fieldset>
+        <hr>
+        <fieldset>
+        <p class="left">Which are your hobbies?</p>
+      <label>
+        <input type="checkbox" value="dancing" class="inline">Dancing</input>
+        </label>
+        <label>
+        <input type="checkbox" value="singing"
+         class="inline">Singing</input>
+         </label>
+         <label>
+        <input type="checkbox" value="cooking" class="inline">Cooking</input>
+            </label>
+            </fieldset>
+            <fieldset>
+      <label>Add a comment about you<textarea placeholder="I also..." rows="3" cols="40"></textarea></label>
+              </fieldset>
+              <input type="submit" id="submit"> 
+    </form>
+     
+  </body>
+
+</html>
+
